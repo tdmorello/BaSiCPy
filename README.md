@@ -1,8 +1,9 @@
 # BaSiCPy
+
 A python package for background and shading correction of optical microscopy images
 [![License](https://img.shields.io/pypi/l/basicpy)](https://github.com/peng-lab/basicpy/LICENSE)
-[![Python Version](https://img.shields.io/pypi/pyversions/python-basic.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/python-basic.svg)](https://pypi.org/project/python-basic)
+[![Python Version](https://img.shields.io/pypi/pyversions/basicpy.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/basicpy.svg)](https://pypi.org/project/python-basic)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -30,7 +31,7 @@ You can also find examples of running the package at [folder Notebooks](https://
 Download from PyPI
 
 ```console
-pip install 'PACKAGE-NAME'
+pip install basicpy
 ```
 
 or install latest development version
@@ -67,6 +68,7 @@ pip install -e '.[dev]'
 This repository uses bump2version to manage dependencies. New releases are pushed to PyPi in the CI pipeline when a new version is committed with a version tag and pushed to the repo.
 
 The development flow should use the following process:
+
 1. New features and bug fixes should be pushed to `dev`
 2. When tests have passed a new development version is ready to be release, use `bump2version major|minor|patch`. This will commit and create a new version tag with the `-dev` suffix.
 3. Additional fixes/features can be added to the current development release by using `bump2version build`.
@@ -94,25 +96,27 @@ After creating a new tagged version, push to Github and the version will be buil
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 - Nicholas Schaub (@Nicholas-Schaub)
-    - General mentoring, technology selection and project management
-    - Designing and implementing core structure of the package
-    - Code review and advising
-    - Providing tests
+  - General mentoring, technology selection and project management
+  - Designing and implementing core structure of the package
+  - Code review and advising
+  - Providing tests
+
 - Tim Morello (@tdmorello)
-    - Designing and implementing core structure of the package
-    - Providing tests
-    - Code review
+  - Designing and implementing core structure of the package
+  - Providing tests
+  - Code review
 - Tingying Peng (@tying84)
-    - General comments and financial support
-    - Reviewing theoretical calculation
-    - Providing a JAX implementation for the approximate fitting routine
-    - Providing test data and commenting on expected output
+  - General comments and financial support
+  - Reviewing theoretical calculation
+  - Providing a JAX implementation for the approximate fitting routine
+  - Providing test data and commenting on expected output
 - Yohsuke T. Fukai (@yfukai)
-    - Theoretical calculation for the optimization problem
-    - Implementation of the main fitting routine
-    - Providing tests
-    - Code review
+  - Theoretical calculation for the optimization problem
+  - Implementation of the main fitting routine
+  - Providing tests
+  - Code review
 
 ### Old version (`f3fcf19`), used as the reference implementation to check the approximate algorithm
+
 - Lorenz Lamm (@LorenzLamm)
 - Mohammad Mirkazemi (@Mirkazemi)
