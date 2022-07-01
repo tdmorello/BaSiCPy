@@ -467,7 +467,9 @@ class BaSiC(BaseModel):
             baseline_flatfield = (
                 self._flatfield[np.newaxis] * self.baseline[baseline_inds]
             )
-            output = (im_float - self._darkfield[np.newaxis]) / baseline_flatfield
+            output = (im_float - self._darkfield[np.newaxis]) / (
+                baseline_flatfield / self.baseline.max()
+            )
         else:
             output = (im_float - self._darkfield[np.newaxis]) / self._flatfield[
                 np.newaxis
